@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+
+    <!-- CSS no head -->
+    <!-- <style>
+        body {
+            padding-bottom: 500px;
+        }
+    </style> -->
+
+    <!-- Integração com o CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Página Principal</a></li>
+            <li><a href="./tabela.html">Página Tabela</a></li>
+            <li><a href="./formulario.html">Página Formulário</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- COMENTÁRIO EM HTML -->
+    <!-- Titulos -->
+    <h1>Título mais importante da página</h1>
+    <h2>sub-título</h2>
+    <h3>sub-título</h3>
+    <h4>sub-título</h4>
+    <h5>sub-título</h5>
+    <h6>sub-título</h6>
+
+    <!-- PARAGRAFOS -->
+    <p>Algum texto qualquer
+        <br> <!--  quebra de linha -->
+        <br>
+        <br>
+        dasjdhajksdhkasd &nbsp; sdhajksdhjas
+    </p>
+
+    <!-- LINKS -->
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com" target="_blank">Google em nova aba</a>
+
+    <!-- QUEBRAS DE LINHA -->
+    <h2>Titulo</h2>
+    <p>Algum texto<br> qualquer</p>
+    <hr>
+    <h2>Titulo</h2>
+    <p>Algum texto qualquer</p>
+    <hr>
+
+    <!-- IMAGEM -->
+    <!-- IMAGEM QUE VEIO DE UM LINK EXTERNO -->
+    <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/11418623-noite-brilhando-ceu-estrelado-fundo-azul-do-espaco-com-estrelas-espaco-lindo-ceu-noturno-gratis-vetor.jpg"
+        alt="">
+
+    <!-- IMAGEM DE DENTRO DO PROJETO -->
+    <img width="100px" height="100px" src="./assets/logo.png" alt="Logo da linguagem de marcação HTML">
+    <hr>
+
+    <!-- FORMULÁRIOS -->
+    <form>
+        <h2>Formulário</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Maria Eduarda" name="nome">
+
+        <label for="cpf">CPF</label>
+        <input type="text" placeholder="000.000.000.01" name="cpf">
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="teste@teste.com" name="email">
+
+        <label for="telefone">Telefone</label>
+        <input type="number" placeholder="061900000001" name="telefone">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+    <hr>
+
+    <!-- LISTAS -->
+    <!-- Lista não ordenada -->
+    <ul>
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Pera</li>
+        <li>Uva</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Estudar HTML</li>
+        <li>Estudar CSS</li>
+        <li>Estudar JAVASCRIPT</li>
+    </ol>
+    <hr>
+
+    <!-- TABELAS -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>ID:</th>
+                <th>Email:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>1</td>
+                <td>maria@gmail.com</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>2</td>
+                <td>joao@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>3</td>
+                <td>jorge@gmail.com</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+
+    <!-- DIV e SPAN -->
+    <div>
+        <h3>Produto X</h3>
+        <p>R$ 500,00</p>
+        <a href="#">Comprar</a>
+    </div>
+    <div>
+        <h3>Produto A</h3>
+        <p>R$ 1000,00</p>
+        <a href="#">Comprar</a>
+    </div>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+        specimen
+        book. It has survived not only five <span style="color: red; background-color:gray;">centuries</span>, but also
+        the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <!-- CSS inline -->
+    <h3 style="font-size: 25px; color: blue;">Titulo qualquer</h3>
+
+    <hr>
+    <!-- Elementos Block e Inline -->
+    <!-- Block -->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+
+    <!-- inline -->
+    <span>Algum texto</span>
+    <span>Outro texto</span>
+
+    <hr>
+
+    <!-- Tags HTML5 -->
+    <nav></nav>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+
+
+    <!-- Integração com CSS -->
+    <!-- ID -->
+    <h3 id="ultimo-titulo">Meu Ultimo Titlo</h3>
+
+    <!-- Classes -->
+    <h3 class="cor-laranja">Meu Titulo</h3>
+    <h3 class="cor-laranja">Meu outro titulo</h3>
+
+    <p class="cor-laranja">dasnjdhaskjdgsak hjdskla hdjasl hdjksalhdj las</p>
+
+    <a href="#" class="cor-laranja">Link qualquer</a>
+
+    <!-- Background (Fundo) -->
+    <p class="fundo-azul"> Algum texto qualquer</p>
+
+    <span class="fundo-azul"> Algum texto</span>
+
+    <hr>
+
+    <!-- 2 elementos, 1 regra -->
+    <p class="texto-pequeno">Algum texto</p>
+    <p id="meu-paragrafo">Outro texto</p>
+
+    <!-- Backgroud Image (Imagem de fundo) -->
+
+    <div id="minha-div">
+        <h3>Testando imagem de background</h3>
+    </div>
+
+    <hr>
+    <!-- Box Model -->
+
+    <!-- Altura e Largura -->
+    <div id="altura-largura">
+        <p>Testando altura e largura</p>
+    </div>
+
+    <!-- Padding (Espaçamento) -->
+    <div id="div-espacamento">
+        <p>Testando Espaçamento</p>
+    </div>
+
+    <!-- Margin (Margem) -->
+    <div id="div-margem">
+        <p>Testando Margem</p>
+    </div>
+
+    <!-- Borda -->
+    <div id="div-borda">
+        <p>Testando Borda</p>
+    </div>
+
+    <!-- Arredondamento da borda -->
+    <div id="div-arredondamento-borda">
+        <p>Testando Arredondamento da Borda</p>
+    </div>
+
+    <hr>
+
+    <!-- Alinhamento de texto -->
+    <div>
+        <p class="meu-texto">Testando alinhamento do texto Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard</p>
+
+    </div>
+
+    <a class="meu-link" href="#">Link</a>
+
+
+
+</body>
+
+</html>
