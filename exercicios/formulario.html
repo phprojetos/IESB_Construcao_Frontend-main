@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #137399;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: #aaa2a2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #103963;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #2a4561;
+        }
+
+        .form-control {
+            border: 1px solid #385b7e;
+            border-radius: 5px;
+            box-shadow: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #c27d15;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+        }
+
+        .form-check-label {
+            margin-left: 10px;
+        }
+
+        .btn {
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .btn-secondary {
+            background-color: #49637a;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .btn-warning {
+            background-color: #11b347;
+            border: none;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background-color: #b18f2c;
+        }
+
+        .btn-primary {
+            background-color: #4d98d1;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group textarea {
+            border-radius: 5px;
+        }
+
+        .form-check-input {
+            margin-top: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Cadastro de Usuário</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+
+            <div class="form-group">
+                <label>Sexo</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino" value="masculino">
+                    <label class="form-check-label" for="sexoMasculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino" value="feminino">
+                    <label class="form-check-label" for="sexoFeminino">Feminino</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="uf">UF</label>
+                <select class="form-control" id="uf">
+                    <option value="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyFutebol">
+                    <label class="form-check-label" for="hobbyFutebol">Futebol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyXadrez">
+                    <label class="form-check-label" for="hobbyXadrez">Xadrez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyEsportes">
+                    <label class="form-check-label" for="hobbyEsportes">Esportes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyMusica">
+                    <label class="form-check-label" for="hobbyMusica">Música</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyCinema">
+                    <label class="form-check-label" for="hobbyCinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hobbyLeitura">
+                    <label class="form-check-label" for="hobbyLeitura">Leitura</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes">Observações</label>
+                <textarea class="form-control" id="observacoes" rows="4" placeholder="Digite suas observações"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-secondary">Voltar</button>
+                <button type="reset" class="btn btn-warning">Limpar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
