@@ -1,6 +1,7 @@
 'use client'
 
 import {Container, Nav, Navbar} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Pagina(props) {

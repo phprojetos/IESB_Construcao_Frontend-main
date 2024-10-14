@@ -5,6 +5,10 @@ import apiSeries from '@/app/apis/apiSeries'
 import Pagina from '@/app/components/Pagina'
 import { useEffect, useState } from 'react'
 import { CardImg, Col, Row, Card, Button } from 'react-bootstrap'
+import 'bootstrap';
+import Serie from '@/app/series/[id]/page'
+
+
 export default function page(props) {
 
     const id = props.params.id
@@ -23,7 +27,7 @@ export default function page(props) {
     }
 
     async function buscarSeries() {
-        const resultado = await apiSeries.get("/person/" + id + "/movie_credits?language=pt-BR")
+        const resultado = await apiSeries.get("/person/" + id + "/credits?language=pt-BR")
         console.log(resultado.data.cast)
         setSeries(resultado.data.cast)
     }
@@ -68,7 +72,7 @@ export default function page(props) {
                                             <p><b>Nota: {serie.vote_average} ⭐</b></p>
                                         </Card.Body>
                                         <Card.Footer className="text-end">
-                                            <Button href={"/filmes/" + serie.id}>Detalhes</Button>
+                                            <Button href={"/serie/" + serie.id}>Detalhes</Button>
                                         </Card.Footer>
                                     </Card>
                                 </Col>
