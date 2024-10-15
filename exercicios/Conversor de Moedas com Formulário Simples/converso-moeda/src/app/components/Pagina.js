@@ -13,6 +13,7 @@ export default function Pagina({ titulo, children }) {
           <Nav className="me-auto">
             <NavDropdown title="moeda" id="basic-nav-dropdown">
               <NavDropdown.Item href="/moeda/clc">Moeda</NavDropdown.Item>
+              <NavDropdown.Item href="/moeda/formik">Moeda-Formik</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Container>
